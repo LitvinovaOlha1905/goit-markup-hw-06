@@ -714,20 +714,6 @@ body {
   color: var(--modal-text-color);
 }
 
-.label-desc {
-  display: block;
-  margin-bottom: 4px;
-
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-
-  color: var(--modal-text-color);
-}
-
-.lable-text {
-  letter-spacing: 0.01em;
-}
-
 .contact-form-input-wrapper {
   position: relative;
   display: block;
