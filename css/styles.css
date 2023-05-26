@@ -1,17 +1,20 @@
 :root {
-  --primary-white-color: #ffffff;
-  --accent-white-color: #f4f4fd;
-  --border-btn-portfolio-color: #e7e9fc;
-  --border-accent: #e7e9fc;
-  --modal-btn-bg-color: #e7e9fc;
-  --modal-bg-color: #fcfcfc;
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
+  --primary-white-color: #ffffff;
 
+  --border-btn-portfolio-color: #e7e9fc;
+  --border-accent: #e7e9fc;
   --button-blue-color: #4d5ae5;
+
+  --modal-btn-bg-color: #e7e9fc;
+  --modal-bg-color: #fcfcfc;
+  --modal-text-color: #8e8f99;
+
   --accent-color: #4d5ae5;
   --accent-focus-color: #404bbf;
   --accent-ocean-color: #404bbf;
+  --accent-white-color: #f4f4fd;
 
   --client-border: #8e8f99;
   --client-color: #8e8f99;
@@ -45,7 +48,7 @@ body {
   width: 1158px;
 }
 
-/* Header */
+/*=========== HEADER ===========*/
 
 .header {
   border-bottom: 1px solid var(--border-accent);
@@ -58,7 +61,8 @@ body {
   align-items: center;
 }
 
-/* Logo */
+/*=========== HEADER LOGO ===========*/
+
 .logo {
   display: block;
   margin-right: 76px;
@@ -77,7 +81,7 @@ body {
   color: var(--title-text-color);
 }
 
-/* Site nav */
+/*=========== SITE NAV ===========*/
 
 .site-nav {
   display: flex;
@@ -130,7 +134,7 @@ body {
   transition: color var(--transition);
 }
 
-/* Address */
+/*=========== ADDRESS ===========*/
 
 .address {
   font-style: normal;
@@ -157,7 +161,7 @@ body {
   color: var(--accent-focus-color);
 }
 
-/* Hero */
+/*=========== HERO ===========*/
 
 .hero {
   margin: 0 auto;
@@ -203,7 +207,7 @@ body {
   border: none;
 }
 
-/* Buttons */
+/*=========== BUTTONS ===========*/
 
 .button {
   display: block;
@@ -231,14 +235,14 @@ body {
   background-color: var(--accent-focus-color);
 }
 
-/* Section */
+/*=========== SECTIONS ===========*/
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-/* Section 1 */
+/*=========== SECTION 1 ===========*/
 
 .features {
   font-style: normal;
@@ -299,7 +303,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Seccion 2 */
+/*=========== SECTION 2 ===========*/
 
 .aboutus {
   padding-top: 0;
@@ -332,7 +336,7 @@ body {
   display: block;
 }
 
-/* Section 3 */
+/*=========== SECTION 3 ===========*/
 
 .section-team {
   background-color: var(--accent-white-color);
@@ -412,7 +416,8 @@ body {
   fill: var(--accent-white-color);
 }
 
-/* Section 4 */
+/*=========== SECTION 4 ===========*/
+
 .client {
   display: flex;
   gap: 24px;
@@ -449,7 +454,9 @@ body {
   fill: currentColor;
 }
 
-/* Footer */
+/*=========== FOOTER ===========*/
+
+/*=========== FOOTER LOGO ===========*/
 
 .footer {
   padding: 100px 0;
@@ -489,6 +496,12 @@ body {
   color: var(--accent-white-color);
 }
 
+/*=========== SOCIAL MEDIA ===========*/
+
+.container-social {
+  margin-right: 80px;
+}
+
 .media {
   margin-top: 0;
   margin-bottom: 16px;
@@ -509,7 +522,67 @@ body {
   background-color: var(--social-bg-footer-color);
 }
 
-/* BACKDROP */
+/*=========== SUBCRIBE ===========*/
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.subscribe-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
+
+.subscribe-input {
+  padding: 8px 0 8px 16px;
+  width: 264px;
+  min-height: 40px;
+
+  border: 1px solid var(--primary-white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: var(--primary-white-color);
+  background-color: transparent;
+}
+
+.subscribe-placeholder::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  color: var(--primary-white-color);
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  column-gap: 16px;
+
+  width: 165px;
+  height: 40px;
+
+  border: none;
+
+  transition-property: background-color;
+}
+
+.subcribe-icon {
+  fill: var(--primary-white-color);
+}
+
+/*=========== BACKDROP ===========*/
 
 .backdrop {
   position: fixed;
@@ -534,7 +607,7 @@ body {
   pointer-events: none;
 }
 
-/* MODAL */
+/*=========== MODAL ===========*/
 
 .modal {
   position: absolute;
@@ -542,6 +615,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 576px;
 
@@ -597,7 +671,178 @@ body {
   fill: var(--primary-white-color);
 }
 
-/* PORTFOLIO */
+.modal-text {
+  margin: 0 0 16px 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--transition-duration);
+}
+
+/*=========== FORM ===========*/
+
+/*=========== LABEL ===========*/
+
+.contact-form-label {
+  margin-bottom: 26px;
+  display: block;
+  cursor: pointer;
+}
+
+.label-desc {
+  display: block;
+  margin-bottom: 4px;
+
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--modal-text-color);
+}
+
+.lable-text {
+  letter-spacing: 0.01em;
+}
+
+.contact-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.label-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 24px;
+
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.contact-form-input:hover + .label-icon,
+.contact-form-input:focus + .label-icon {
+  fill: var(--accent-color);
+}
+
+/*=========== INPUT ===========*/
+
+.contact-form-input {
+  padding-left: 38px;
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.contact-form-input:hover,
+.contact-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+/*=========== MESSAGE ===========*/
+
+.message-wrapper {
+  margin-bottom: 16px;
+}
+
+.message {
+  padding: 8px 16px;
+  min-height: 120px;
+  resize: none;
+
+  line-height: 1.2;
+}
+
+.message::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.04em;
+
+  color: rgba(46, 47, 66, 0.4);
+}
+
+/*=========== CHECKBOX ===========*/
+
+.contact-form-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--modal-text-color);
+}
+
+.checkbox-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-white-color);
+  margin-right: 8px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.checkbox-icon {
+  fill: var(--primary-white-color);
+}
+
+.contact-form-checkbox:checked + .checkbox-policy {
+  background-color: var(--accent-ocean-color);
+  border-color: var(--accent-ocean-color);
+}
+
+.privacy-policy-link {
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+/*=========== BUTTON FORM ===========*/
+
+.contact-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+
+  transition-property: background-color;
+
+  border: none;
+}
+
+/*=========== PORTFOLIO ===========*/
 
 .portfolio {
   padding: 96px 0 120px 0;
@@ -606,7 +851,7 @@ body {
   line-height: 1.5;
 }
 
-/* Portfolio Buttons */
+/*=========== PORTFOLIO BUTTONS ===========*/
 
 .list-button {
   display: flex;
@@ -633,29 +878,7 @@ body {
   color: var(--accent-white-color);
 }
 
-.potfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
-}
-
-.portfolio-item {
-  width: 360px;
-}
-
-.photo-link {
-  display: block;
-
-  transition-property: box-shadow;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.photo-link:hover,
-.photo-link:focus {
-  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
-    0px 2px 1px rgb(46 47 66 / 8%);
-}
+/*=========== OVERELAY ===========*/
 
 .overlay-list-img {
   position: relative;
@@ -688,6 +911,32 @@ body {
   transform: translateY(0%);
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
+}
+
+/*=========== PORTFOLIO ITEMS ===========*/
+
+.potfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  width: 360px;
+}
+
+.photo-link {
+  display: block;
+
+  transition-property: box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.photo-link:hover,
+.photo-link:focus {
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
+    0px 2px 1px rgb(46 47 66 / 8%);
 }
 
 .portfolio-info {
