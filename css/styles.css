@@ -681,12 +681,16 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 
-  color: var(--transition-duration);
+  color: var(--title-text-color);
 }
 
 /*=========== FORM ===========*/
 
 /*=========== LABEL ===========*/
+
+.contact-form-group {
+  margin-bottom: 8px;
+}
 
 .contact-form-label {
   margin-bottom: 26px;
