@@ -753,6 +753,10 @@ body {
   fill: var(--accent-color);
 }
 
+.contact-form-comment {
+  margin-bottom: 16px;
+}
+
 /*=========== INPUT ===========*/
 
 .contact-form-input {
@@ -779,16 +783,16 @@ body {
 
 /*=========== MESSAGE ===========*/
 
-/* .message-wrapper {
-  margin-bottom: 16px;
-} */
-
 .message {
   padding: 8px 16px;
-  min-height: 120px;
+  height: 120px;
   resize: none;
 
-  line-height: 1.2;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .message::placeholder {
@@ -798,6 +802,10 @@ body {
   letter-spacing: 0.04em;
 
   color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-policy {
+  margin-bottom: 24px;
 }
 
 /*=========== CHECKBOX ===========*/
@@ -810,23 +818,22 @@ body {
 .checkbox {
   display: flex;
   align-items: center;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-
-  color: var(--modal-text-color);
 }
 
 .checkbox-policy {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
-  background-color: var(--primary-white-color);
-  margin-right: 8px;
+
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--title-text-color);
   cursor: pointer;
+
+  background-color: var(--primary-white-color);
+  fill: transparent;
 
   transition-property: background-color;
   transition-duration: var(--transition-duration);
@@ -842,6 +849,8 @@ body {
   border-color: var(--accent-ocean-color);
 }
 
+/*=========== LINK ===========*/
+
 .privacy-policy-link {
   line-height: 1.33;
   letter-spacing: 0.04em;
@@ -852,7 +861,7 @@ body {
 /*=========== BUTTON FORM ===========*/
 
 .contact-form-btn {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 
