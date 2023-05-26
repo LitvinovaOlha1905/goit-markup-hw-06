@@ -821,16 +821,16 @@ body {
   background-color: var(--primary-white-color);
   fill: transparent;
 
-  transition-property: background-color;
+  /* transition-property: background-color;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: var(--timing-function); */
 }
 
 .checkbox-icon {
   fill: var(--primary-white-color);
 }
 
-.contact-form-checkbox:checked + .checkbox-policy {
+.contact-form-checkbox:checked + .checkbox > .checkbox-policy {
   border: none;
   fill: var(--primary-white-color);
   background-color: var(--accent-ocean-color);
