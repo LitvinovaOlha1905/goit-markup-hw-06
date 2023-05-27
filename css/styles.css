@@ -801,11 +801,6 @@ body {
   position: absolute;
 } */
 
-.checkbox {
-  display: flex;
-  align-items: center;
-}
-
 .checkbox-policy {
   display: inline-flex;
   align-items: center;
