@@ -531,9 +531,9 @@ body {
   column-gap: 24px;
 }
 
-.subscribe-label {
+/* .subscribe-label {
   margin-right: 24px;
-}
+} */
 
 .subscribe-text {
   margin-top: 0;
@@ -587,8 +587,6 @@ body {
 }
 
 .subcribe-icon {
-  margin-left: 16px;
-
   fill: var(--primary-white-color);
 }
 
@@ -686,7 +684,7 @@ body {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 
   text-align: center;
   letter-spacing: 0.02em;
@@ -734,7 +732,6 @@ body {
   transition-timing-function: var(--timing-function);
 }
 
-.contact-form-input:hover + .label-icon,
 .contact-form-input:focus + .label-icon {
   fill: var(--accent-color);
 }
@@ -761,7 +758,6 @@ body {
   transition-timing-function: var(--timing-function);
 }
 
-.contact-form-input:hover,
 .contact-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -778,7 +774,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
 
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--title-text-color);
 }
 
 .message::placeholder {
@@ -796,15 +792,15 @@ body {
 
 /*=========== CHECKBOX ===========*/
 
-/* .contact-form-checkbox {
-  appearance: none;
-  position: absolute;
-} */
+.checkbox {
+  margin: 0;
+}
 
 .checkbox-policy {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   margin-right: 8px;
   width: 16px;
   height: 16px;
@@ -815,10 +811,6 @@ body {
 
   background-color: var(--primary-white-color);
   fill: transparent;
-
-  /* transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--timing-function); */
 }
 
 .checkbox-icon {
