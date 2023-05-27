@@ -790,10 +790,6 @@ body {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.comment {
-  color: var(--title-text-color);
-}
-
 .contact-form-policy {
   margin-bottom: 24px;
 }
