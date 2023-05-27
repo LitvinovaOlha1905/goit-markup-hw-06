@@ -825,7 +825,7 @@ body {
   fill: var(--primary-white-color);
 }
 
-.contact-form-checkbox:checked + .contact-form-label > .checkbox-policy {
+.contact-form-checkbox:checked + .checkbox > .checkbox-policy {
   border: none;
   fill: var(--primary-white-color);
   background-color: var(--accent-ocean-color);
